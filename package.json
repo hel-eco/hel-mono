@@ -1,7 +1,6 @@
 {
   "name": "hel-mono-react",
   "version": "0.0.1",
-  "private": true,
   "workspaces": [
     "apps/*",
     "packages/*",
@@ -129,5 +128,17 @@
         "stylelint"
       ]
     }
-  }
+  },
+  "files": [
+    "apps",
+    "base",
+    "dev",
+    "packages",
+    ".gitignore",
+    ".npmignore",
+    ".npmrc",
+    "pnpm-workspace.yaml",
+    "README.md",
+    "tsconfig.json"
+  ]
 }
