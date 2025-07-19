@@ -41,7 +41,7 @@ npm start hub:build
 先启动 hub 依赖的子模块，再启动 hub
 ```bash
 # 启动子模块
-npm start mono-comps-in-one-v2
+npm start mono-comps
 
 # 启动hub
 npm start hub:hel
@@ -52,8 +52,8 @@ npm start hub:hel
 # 构建宿主，会转为 pnpm --filter hub run build:hel 执行
 npm start hub:build:hel
 
-# 构建子模块，会转为 pnpm --filter mono-comps-in-one-v2 run build:hel 执行
-npm start mono-comps-in-one-v2:build:hel
+# 构建子模块，会转为 pnpm --filter mono-comps run build:hel 执行
+npm start mono-comps:build:hel
 ```
 
 ## 构建微模块模式npm包
@@ -91,6 +91,6 @@ npm start .init my-app
 
 ```bash
 npm start @mc  
-npm start packages/mono-comps-in-one-v2
-npm start mono-comps-in-one-v2
+npm start packages/mono-comps
+npm start mono-comps
 ```
