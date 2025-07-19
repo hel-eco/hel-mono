@@ -7,8 +7,8 @@
         "./*"
       ],
     },
-    "outDir": "lib-node",
-    "jsx": "react-jsx",
+    "jsx": "react",
+    "outDir": "hel_srv",
     "module": "Node16",
     "moduleResolution": "node16"
   },

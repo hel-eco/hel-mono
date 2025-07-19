@@ -7,7 +7,7 @@ export function HelloMono() {
 
   return (
     <div>
-      <h1>sub mod 888---</h1>
+      <h1>sub mod new version 888888 new 2012---</h1>
       <h3>num: {num}</h3>
       <button onClick={() => setNum(Date.now())}>change num</button>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { HelloMono, hello } from 'mono-comps-in-one-v2';
+import { HelloMono, hello } from 'mono-comps';
 import { callFn } from '@/utils/path/to/str';
 import logo from './logo.svg';
 import './App.css';

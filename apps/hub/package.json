@@ -5,7 +5,7 @@
   "main": "./src/index",
   "private": true,
   "dependencies": {
-    "mono-comps-in-one-v2": "workspace:*"
+    "mono-comps": "workspace:*"
   },
   "scripts": {
     "prestart": "echo prestart",

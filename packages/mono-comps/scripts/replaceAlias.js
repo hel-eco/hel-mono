@@ -11,9 +11,16 @@
 |--------------------------------------------------------------------------
 */
 const replacer = require('replace-absolute-path');
+const fs = require('fs');
+const path = require('path');
 
 async function doReplace() {
   const libDir = './src-js';
+  const libDirPath = path.join(__dirname, '../src-js');
+  if (!fs.existsSync(libDirPath)) {
+    fs.mkdirSync(libDirPath);
+  }
+
   const strList = libDir.split('/');
   const libDirShortName = strList[strList.length - 1];
 

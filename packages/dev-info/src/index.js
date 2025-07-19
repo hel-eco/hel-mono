@@ -7,12 +7,12 @@
 module.exports = {
   appConfs: {
     hub: {
-      port: 3001,
+      port: 3002,
     },
     hub2: {
       port: 3006,
     },
-    'mono-comps-in-one-v2': {
+    'mono-comps': {
       alias: '@mc',
       port: 3100,
       hel: {
