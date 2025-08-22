@@ -1,6 +1,6 @@
 ## desc
 
-hel-demo mono-comps
+hel-demo mono-libs
 
 ## 发布
 

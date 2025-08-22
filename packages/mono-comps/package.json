@@ -1,20 +1,14 @@
 {
-  "name": "mono-comps",
-  "version": "0.0.1",
-  "description": "hel-mono base comps",
-  "repository": {
-    "type": "git",
-    "directory": "packages/mono-comps"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "fancyzhong"
-  },
+  "name": "@hel-demo/mono-comps",
+  "description": "hel-mono demo comps",
+  "version": "0.1.0",
+  "main": "./src/index",
   "exports": {
     ".": {
       "types": "./src/index.ts",
       "import": "./src/index.ts"
     },
+    "./index.css": "./dist/index.css",
     "./hel": {
       "types": "./src/.hel/entrance/libTypes.ts",
       "import": "./src/.hel/entrance/libTypes.ts"
@@ -23,65 +17,46 @@
   "publishConfig": {
     "exports": {
       ".": {
-        "types": "./src/index.ts",
-        "import": "./lib/index.js"
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.mjs",
+        "require": "./dist/index.js"
       },
+      "./index.css": "./dist/index.css",
       "./hel": {
         "types": "./src/.hel/entrance/libTypes.ts",
         "import": "./src/.hel/entrance/libTypes.ts"
       }
     }
   },
-  "main": "lib/index.js",
-  "module": "es/index.js",
-  "types": "src/index.ts",
-  "files": [
-    "dist",
-    "lib",
-    "es",
-    "src",
-    "README.md",
-    "tsconfig.json"
-  ],
   "scripts": {
-    "prebuild": "tsc && node ./scripts/replaceAlias.js",
-    "start": "node ../../dev/scripts/hel/start.js",
+    "build": "pnpm run build:npm",
+    "start": "node ../../dev/scripts/start.js",
+    "start:hel": "node ../../dev/scripts/hel/start.js",
+    "start:hwl": "node ../../dev/scripts/hel/startWL.js",
+    "start:hwr": "node ../../dev/scripts/hel/startWR.js",
+    "start:deps": "node ../../dev/scripts/hel/startDeps.js",
+    "build:npm": "tsup",
     "build:hel": "node ../../dev/scripts/hel/build.js",
-    "build": "npm run prebuild && npm run build:npm",
-    "tsc": "tsc",
-    "build:npm": "npm run build:es && npm run build:umd && npm run build:umd:min",
-    "build:npm2": "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
-    "build:commonjs": "rollup -c --environment BUILD_ENV:commonjs",
-    "build:es": "rollup -c --environment BUILD_ENV:es",
-    "build:umd": "rollup -c --environment BUILD_ENV:development",
-    "build:umd:min": "rollup -c --environment BUILD_ENV:production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:test": "pnpm run test",
+    "start:test:once": "pnpm run test:once",
+    "test": "node ../../dev/scripts/test --config ../../dev/config/jest/jest.config.js",
+    "test:once": "cross-env ONCE=1 node ../../dev/scripts/test --config ../../dev/config/jest/jest.config.js"
   },
   "dependencies": {
-    "@types/react": ">=16.0.0",
-    "@types/react-dom": ">=16.0.0",
-    "react": ">=16.10.2",
-    "react-dom": ">=16.10.2"
+    "@hel-demo/mono-libs": "workspace:^"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-react": "^7.12.10",
-    "babel-cli": "^6.26.0",
-    "rollup": "^2.23.0",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-uglify": "^6.0.4"
+    "esbuild-plugin-module-css": "^0.1.1",
+    "hash-css-selector": "^1.1.0",
+    "postcss": "^8.4.4",
+    "postcss-modules": "^6.0.1"
   },
-  "peerDependencies": {
-    "@types/react": ">=16.0.0",
-    "@types/react-dom": ">=16.0.0",
-    "react": ">=16.10.2",
-    "react-dom": ">=16.10.2"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "bundleDependencies": false,
-  "deprecated": false,
   "browserslist": {
     "production": [
       ">0.2%",
@@ -94,8 +69,20 @@
       "last 1 safari version"
     ]
   },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
   "volta": {
     "node": "18.12.1",
     "pnpm": "8.6.8"
-  }
+  },
+  "files": [
+    "dist",
+    "hel_dist",
+    "src",
+    "README.md",
+    "tsconfig.json"
+  ]
 }

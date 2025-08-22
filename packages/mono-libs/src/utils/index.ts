@@ -1,7 +1,7 @@
 export {
   delay,
   helloAsync,
-} from './path/to/async-hello';
+} from '@ml/utils/path/to/async-hello';
 
 /**
  * 对 hel 说你好

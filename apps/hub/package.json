@@ -4,17 +4,22 @@
   "version": "0.1.0",
   "main": "./src/index",
   "private": true,
-  "dependencies": {
-    "mono-comps": "workspace:*"
-  },
   "scripts": {
-    "prestart": "echo prestart",
     "start": "node ../../dev/scripts/start.js",
     "start:hel": "node ../../dev/scripts/hel/start.js",
+    "start:hwl": "node ../../dev/scripts/hel/startWL.js",
+    "start:hwr": "node ../../dev/scripts/hel/startWR.js",
+    "start:deps": "node ../../dev/scripts/hel/startDeps.js",
     "build": "node ../../dev/scripts/build.js",
     "build:hel": "node ../../dev/scripts/hel/build.js",
+    "build:ci": "node ../../dev/scripts/hel/buildCI.js",
+    "build:all": "node ../../dev/scripts/hel/buildAll.js",
     "test": "node ../../dev/scripts/test --config ../../dev/config/jest/jest.config.js",
-    "test:all": "cross-env ALL=1 node ../../dev/scripts/test --config ../../dev/config/jest/jest.config.js"
+    "test:once": "cross-env ONCE=1 node ../../dev/scripts/test --config ../../dev/config/jest/jest.config.js"
+  },
+  "dependencies": {
+    "@hel-demo/mono-comps": "workspace:^",
+    "@hel-demo/mono-libs": "workspace:^"
   },
   "eslintConfig": {
     "extends": [
@@ -38,5 +43,9 @@
     "presets": [
       "react-app"
     ]
+  },
+  "volta": {
+    "node": "18.12.1",
+    "pnpm": "8.6.8"
   }
 }

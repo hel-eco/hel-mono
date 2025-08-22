@@ -3,14 +3,12 @@
   "version": "0.0.3",
   "workspaces": [
     "apps/*",
-    "packages/*",
-    "configs/*",
-    "modules/*"
+    "packages/*"
   ],
   "scripts": {
     "start": "node dev/root-scripts/executeStart",
     "build": "node dev/root-scripts/buildApp",
-    "submod": "node dev/root-scripts/startSubMod",
+    "hint": "node dev/scripts/hel/hint.js",
     "prepare": "husky install",
     "preinstall": "npx only-allow pnpm",
     "eslint": "eslint . --ext ts,tsx,js,jsx,mjs",
@@ -19,11 +17,10 @@
     "stylelint:fix": "stylelint --fix '**/*.{css,scss}'"
   },
   "dependencies": {
-    "dev-info": "workspace:*",
     "hel-iso": "^4.4.0",
-    "hel-lib-proxy": "^4.10.0",
-    "hel-micro": "^4.12.0",
-    "hel-types": "^4.3.6",
+    "hel-lib-proxy": "^4.11.3",
+    "hel-micro": "^4.12.5",
+    "hel-types": "^4.3.10",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
@@ -55,6 +52,7 @@
     "cross-env": "^7.0.3",
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^3.2.0",
+    "dev-info": "workspace:*",
     "dotenv": "^10.0.0",
     "dotenv-expand": "^5.1.0",
     "esbuild-copy-static-files": "^0.1.0",
@@ -65,7 +63,7 @@
     "file-loader": "^6.2.0",
     "fs-extra": "^11.2.0",
     "hel-dev-utils": "^5.2.2",
-    "hel-mono-helper": "0.4.0",
+    "hel-mono-helper": "0.6.1",
     "hel-mono-types": "^1.2.2",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.3",
@@ -98,6 +96,7 @@
     "terser": "^5.42.0",
     "terser-webpack-plugin": "^5.2.5",
     "tsconfig": "workspace:*",
+    "tsc-alias": "^1.8.16",
     "tsup": "^8.5.0",
     "typescript": "^5.7.2",
     "typescript-plugin-css-modules": "^5.0.1",

@@ -1,6 +1,4 @@
 
-export function hello() {
-  console.log('hello fn xxx fn xxx');
-  const a = 1 + 2 + 3;
-  return a;
+export function randomNum(max = 100) {
+  return Math.ceil(Math.random() * max);
 }

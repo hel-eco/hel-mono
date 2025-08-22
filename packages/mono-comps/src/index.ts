@@ -1,2 +1,2 @@
 export { HelloMono } from './components/HelloMono';
-export { hello } from './utils';
+export { HelloMono2 } from './components/HelloMono2';
