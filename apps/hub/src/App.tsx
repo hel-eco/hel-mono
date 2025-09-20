@@ -13,7 +13,7 @@ function App() {
         <h3>callFn: {callFn()}!</h3>
         <h3>@hel-demo/mono-libs hello: {hello()}!</h3>
         <img src={logo} className="App-logo" alt="logo" />
-        <HelloMono name="hel-momo" />
+        <HelloMono name="hel-mono" />
         <p className={styles.wrap}>
           Edit <code>src/App.tsx</code> and save to reload hel-mono.
         </p>

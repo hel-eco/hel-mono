@@ -1,3 +1,3 @@
 const { presetFns } = require('./share/fns');
 
-presetFns.buildHelMod();
+presetFns.buildHellModAll();

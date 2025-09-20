@@ -9,9 +9,9 @@
   },
   "license": "MIT",
   "author": {
-    "name": "fancyzhong"
+    "name": "fatasticsoul"
   },
-  "main": "./src/index",
+  "main": "./src/index.ts",
   "exports": {
     ".": {
       "types": "./src/index.ts",
@@ -23,6 +23,11 @@
     }
   },
   "publishConfig": {
+    "access": "public",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "unpkg": "./dist/index.js",
     "exports": {
       ".": {
         "types": "./dist/index.d.ts",
@@ -43,27 +48,29 @@
     "tsconfig.json"
   ],
   "scripts": {
-    "start": "node ../../dev/scripts/start.js",
+    "start": "node ../../dev/root-scripts/executeStart",
+    "start:raw": "node ../../dev/scripts/start.js",
     "start:hel": "node ../../dev/scripts/hel/start.js",
-    "start:hwl": "node ../../dev/scripts/hel/startWL.js",
-    "start:hwr": "node ../../dev/scripts/hel/startWR.js",
+    "start:for": "node ../../dev/scripts/hel/startFor",
+    "start:all": "node ../../dev/scripts/hel/startAll",
     "hint": "node ../../dev/scripts/hel/hint.js",
     "build": "pnpm run build:npm",
-    "build:nbs": "pnpm run build:npm && pnpm run build:helbs",
-    "build:local": "cross-env-shell \"pnpm run build:helbs && pnpm run build:meta\"",
-    "build:ci": "node ../../dev/scripts/hel/buildCI",
     "build:hel": "node ../../dev/scripts/hel/build.js",
+    "build:meta": "node ../../dev/scripts/hel/meta",
+    "build:helm": "cross-env-shell \"pnpm run build:hel && pnpm run build:meta\"",
     "build:hels": "node ../../dev/scripts/hel/buildS",
     "build:helbs": "node ../../dev/scripts/hel/buildBS",
-    "build:meta": "node ../../dev/scripts/hel/meta",
+    "build:nbs": "pnpm run build:npm && pnpm run build:helbs",
+    "build:nbsm": "cross-env-shell \"pnpm run build:nbs && pnpm run build:meta\"",
+    "build:ci": "node ../../dev/scripts/hel/buildCI",
     "build:npm": "tsup",
     "tsc": "tsc --project ./tsconfig.build.json && tsc-alias -p ./tsconfig.json ",
-    "start:test": "npm run test",
-    "start:test:once": "npm run test:once",
     "test": "node ../../dev/scripts/test --config ../../dev/config/jest/jest.config.js",
     "test:once": "cross-env ONCE=1 node ../../dev/scripts/test --config ../../dev/config/jest/jest.config.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "hel-mono-runtime-helper": "^1.1.2"
+  },
   "devDependencies": {
     "@babel/preset-env": "^7.12.11",
     "babel-cli": "^6.26.0"

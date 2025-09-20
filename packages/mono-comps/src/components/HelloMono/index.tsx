@@ -1,3 +1,4 @@
+import { hello } from '@hel-demo/mono-libs';
 import { randomNum } from '@mc/utils';
 import styles from './index.module.css';
 
@@ -24,6 +25,7 @@ export function HelloMono(props: IProps) {
       <header className={styles.header}>
         HelloMono component header{props.name || ''}
         <b> random num {randomNum()}</b>
+        <b> hello from @hel-demo/mono-libs {hello()}</b>
         <img src={svgUrl} className={styles.logo} alt="logo" />
         <Link label="Learn React" href="https://reactjs.org" />
         <Link label="Learn Hel Micro" href="https://github.com/Tencent/hel" />

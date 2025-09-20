@@ -1,8 +1,11 @@
 {
-  "name": "hub",
-  "appGroupName": "hub",
+  "name": "ra",
   "version": "0.1.0",
-  "main": "./src/index",
+  "private": true,
+  "hel": {
+    "ciCmd": "build:hel"
+  },
+  "main": "./src/index.ts",
   "scripts": {
     "start": "node ../../dev/root-scripts/executeStart",
     "start:raw": "node ../../dev/scripts/start",
@@ -19,8 +22,7 @@
     "test:once": "cross-env ONCE=1 node ../../dev/scripts/test --config ../../dev/config/jest/jest.config.js"
   },
   "dependencies": {
-    "@hel-demo/mono-comps": "workspace:^",
-    "@hel-demo/mono-libs": "workspace:^",
+    "@hel-demo/mono-bslib": "^0.0.1",
     "hel-mono-runtime-helper": "^1.1.2"
   },
   "eslintConfig": {
