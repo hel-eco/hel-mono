@@ -1,13 +1,8 @@
 {
+  "deployPath": "https://unpkg.com",
+  "doc": "https://tencent.github.io/hel/docs/hel-mono/basic",
+  "handleDeployPath": true,
   "mods": {
-    "hub": {
-      "alias": "@",
-      "port": 3000
-    },
-    "ra": {
-      "alias": "@",
-      "port": 3001
-    },
     "@hel-demo/mono-comps": {
       "alias": "@mc",
       "port": 3100
@@ -16,8 +11,9 @@
       "alias": "@ml",
       "port": 3101
     },
-    "htest": {
-      "port": 3002
+    "hub": {
+      "alias": "@",
+      "port": 3000
     }
   }
 }
