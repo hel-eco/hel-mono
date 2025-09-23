@@ -1,2 +1,5 @@
-export { HelloMono } from './components/HelloMono';
-export { HelloMono2 } from './components/HelloMono2';
+import * as lib from './export';
+
+export * from './export';
+
+export default lib;

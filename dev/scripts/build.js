@@ -174,8 +174,7 @@ function build(previousFileSizes) {
       // [HEL_MARK]
       // 还需要执行 hel 服务端模块构建
       if (process.env.HEL_BUILD === cst.HEL_MICRO_BUILD_BS) {
-        buildSrvModToHelDist(true);
-        // buildSrvModToHelDist();
+        buildSrvModToHelDist();
       }
 
       const resolveArgs = {
