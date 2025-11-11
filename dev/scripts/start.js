@@ -53,8 +53,9 @@ function getPort() {
 }
 
 // Tools like Cloud9 rely on this.
-const DEFAULT_PORT = getPort();
-const HOST = process.env.HOST || '0.0.0.0';
+// [HEL_MARK] 支持根目录和子目录启动应用都能正确获取端口，故写在此处
+const DEFAULT_PORT = monoUtil.getPort();
+const HOST = monoUtil.getHost();
 
 if (process.env.HOST) {
   const msg = `Attempting to bind to HOST environment variable: ${chalk.yellow(chalk.bold(process.env.HOST))}`;
