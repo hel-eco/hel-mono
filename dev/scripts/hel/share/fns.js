@@ -109,7 +109,7 @@ function buildHelMod() {
 /**
  * 传统的基于hel的一体化构建方式脚本，如有需要，可在流水线里构建后再提取相关产物推送到 helpack 或自己的模块管控平台
  */
-function buildHellModAll() {
+function buildHelModAll() {
   // 标识需要提取元数据给 helpack，构建产物会输出到 hel_dist 目录，以基于hel的传统整体模式构建
   process.env.HEL_BUILD = cst.HEL_ALL_BUILD;
   prepareHelEntry();
@@ -141,7 +141,7 @@ const presetFns = {
   startHelLegacyAllInOneMode,
   startRawLegacyAllInOneMode,
   buildHelMod,
-  buildHellModAll,
+  buildHelModAll,
   buildHelBrowserAndServerMod,
 };
 
