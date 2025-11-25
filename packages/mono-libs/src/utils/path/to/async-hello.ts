@@ -11,5 +11,5 @@ export function delay(ms = 1000) {
  */
 export async function helloAsync() {
   await delay();
-  return 'async hel hello v1.0.1';
+  return 'async hel hello v1.0.2';
 }
