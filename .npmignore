@@ -1,10 +1,6 @@
 .cache/
 .hel/
-build/
-hel_dist/
+src/
 
 **/.bin
 **/.cache
-**/.hel
-**/build
-**/hel_dist

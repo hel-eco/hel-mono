@@ -1,6 +1,6 @@
 {
   "name": "@hel-demo/mono-libs",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "hel-mono demo libs",
   "repository": {
     "type": "git",
@@ -11,7 +11,7 @@
   "author": {
     "name": "fatasticsoul"
   },
-  "main": "./src/index.ts",
+  "main": "./src/index",
   "exports": {
     ".": {
       "types": "./src/index.ts",
@@ -35,17 +35,17 @@
         "require": "./dist/index.js"
       },
       "./hel": {
-        "types": "./src/.hel/entrance/libTypes.ts",
-        "import": "./src/.hel/entrance/libTypes.ts"
+        "types": "./dist/.hel/entrance/libTypes.d.ts",
+        "import": "./dist/.hel/entrance/libTypes.mjs",
+        "require": "./dist/.hel/entrance/libTypes.js"
       }
     }
   },
   "files": [
     "dist",
     "hel_dist",
-    "src",
-    "README.md",
-    "tsconfig.json"
+    "!src",
+    "README.md"
   ],
   "scripts": {
     "start": "node ../../dev/root-scripts/executeStart",
@@ -69,7 +69,12 @@
     "test:once": "cross-env ONCE=1 node ../../dev/scripts/test --config ../../dev/config/jest/jest.config.js"
   },
   "dependencies": {
-    "hel-mono-runtime-helper": "^1.1.2"
+    "hel-mono-runtime-helper": "^1.1.2",
+    "hel-lib-proxy": "*"
+  },
+  "peerDependencies": {
+    "hel-mono-runtime-helper": "^1.1.2",
+    "hel-lib-proxy": "*"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.12.11",
