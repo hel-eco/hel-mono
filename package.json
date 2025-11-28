@@ -1,6 +1,6 @@
 {
   "name": "hel-mono-react",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "workspaces": [
     "apps/*",
     "packages/*"
@@ -19,7 +19,7 @@
   "dependencies": {
     "hel-iso": "^4.4.0",
     "hel-lib-proxy": "^4.12.1",
-    "hel-micro": "^4.14.6",
+    "hel-micro": "^4.14.7",
     "hel-mono-runtime-helper": "^1.2.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
