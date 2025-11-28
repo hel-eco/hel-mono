@@ -1,6 +1,6 @@
 {
   "name": "hel-mono-react",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "workspaces": [
     "apps/*",
     "packages/*"
@@ -73,6 +73,8 @@
     "jest-environment-jsdom": "^27.5.1",
     "jest-resolve": "^27.4.2",
     "jest-watch-typeahead": "^1.0.0",
+    "less": "^4.4.2",
+    "less-loader": "^12.3.0",
     "lint-staged": "^11.2.6",
     "mini-css-extract-plugin": "^2.4.5",
     "postcss": "^8.4.12",
