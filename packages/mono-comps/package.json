@@ -32,6 +32,10 @@
         "import": "./dist/.hel/entrance/libTypes.mjs",
         "require": "./dist/.hel/entrance/libTypes.js"
       }
+    },
+    "dependencies": {
+      "@hel-demo/mono-libs": "*",
+      "hel-mono-runtime-helper": "^2.2.0"
     }
   },
   "scripts": {
@@ -53,10 +57,10 @@
   },
   "dependencies": {
     "@hel-demo/mono-libs": "workspace:^",
-    "hel-mono-runtime-helper": "^1.2.1"
+    "hel-mono-runtime-helper": "^2.2.0"
   },
   "peerDependencies": {
-    "hel-mono-runtime-helper": "^1.2.1",
+    "hel-mono-runtime-helper": "^2.2.0",
     "hel-lib-proxy": "*"
   },
   "devDependencies": {
@@ -95,6 +99,7 @@
   "files": [
     "dist",
     "hel_dist",
+    "!src",
     "README.md"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "name": "hub",
   "appGroupName": "hub",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "./src/index",
   "scripts": {
     "start": "node ../../dev/root-scripts/executeStart",
@@ -21,7 +21,7 @@
   "dependencies": {
     "@hel-demo/mono-comps": "workspace:^",
     "@hel-demo/mono-libs": "workspace:^",
-    "hel-mono-runtime-helper": "^1.2.1"
+    "hel-mono-runtime-helper": "^2.2.0"
   },
   "eslintConfig": {
     "extends": [

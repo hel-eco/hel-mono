@@ -19,8 +19,8 @@
   "dependencies": {
     "hel-iso": "^4.4.0",
     "hel-lib-proxy": "^4.12.1",
-    "hel-micro": "^4.14.7",
-    "hel-mono-runtime-helper": "^1.2.1",
+    "hel-micro": "^4.15.0",
+    "hel-mono-runtime-helper": "^2.2.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-is": "^16.4.2"
@@ -62,8 +62,8 @@
     "file-loader": "^6.2.0",
     "fs-extra": "^11.2.0",
     "hel-dev-utils": "^5.3.8",
-    "hel-mono-helper": "^1.6.3",
-    "hel-mono-types": "^2.3.1",
+    "hel-mono-helper": "^1.8.0",
+    "hel-mono-types": "^2.4.0",
     "hel-types": "^4.3.10",
     "html-webpack-plugin": "^5.5.0",
     "http-proxy-middleware": "^2.0.9",

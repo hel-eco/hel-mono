@@ -3,6 +3,10 @@
   "doc": "https://tencent.github.io/hel/docs/hel-mono/basic",
   "handleDeployPath": true,
   "mods": {
+    "hub": {
+      "alias": "@",
+      "port": 3000
+    },
     "@hel-demo/mono-comps": {
       "alias": "@mc",
       "port": 3100
@@ -10,10 +14,6 @@
     "@hel-demo/mono-libs": {
       "alias": "@ml",
       "port": 3101
-    },
-    "hub": {
-      "alias": "@",
-      "port": 3000
     }
   }
 }
