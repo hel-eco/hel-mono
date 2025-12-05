@@ -7866,6 +7866,7 @@ packages:
       jsonc-parser: 3.3.1
       shelljs: 0.9.2
     dev: true
+    bundledDependencies: []
 
   /hel-mono-runtime-helper@2.2.0(hel-mono-types@2.4.0):
     resolution: {integrity: sha512-WwPrdG0aNfx4nuzPbyuQt7jRbmc2Fzlk0ikIptmBONIVGpBtQDexXhiBpeUZljf3NrApDdasmxvLQrnVq+UjcA==}
