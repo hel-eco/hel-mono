@@ -25,6 +25,6 @@ exports.FN_TRIGGER_NAMES = {
   startHelLegacyAllInOneMode: ['all', 'start:all'],
   startRawLegacyAllInOneMode: ['raw', 'start:raw'],
   buildHelMod: ['bhel', 'build-hel', 'build:hel'],
-  buildHellModAll: ['ball', 'build-all', 'build:all'],
+  buildHelModAll: ['ball', 'build-all', 'build:all'],
   buildHelBrowserAndServerMod: ['bhelbs', 'build-helbs', 'build:helbs'],
 };

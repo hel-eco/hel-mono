@@ -1,10 +1,5 @@
 .cache/
 .hel/
-build/
-hel_dist/
 
 **/.bin
 **/.cache
-**/.hel
-**/build
-**/hel_dist

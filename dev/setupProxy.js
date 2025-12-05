@@ -3,8 +3,8 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 // your proxy host
 const proxyHost = 'https://hel.woa.com';
 
-module.exports = function (app) {
-  const proxyPath = (path, target = proxyHost, pathRewrite) => {
+function makeProxyFn(app) {
+  const proxyFn = (path, target = proxyHost, pathRewrite) => {
     app.use(path, createProxyMiddleware({
       target,
       secure: false,
@@ -12,5 +12,11 @@ module.exports = function (app) {
       pathRewrite,
     }));
   };
-  proxyPath('/openapi');
+
+  return proxyFn;
+}
+
+module.exports = function (app) {
+  const proxy = makeProxyFn(app);
+  proxy('/openapi');
 };

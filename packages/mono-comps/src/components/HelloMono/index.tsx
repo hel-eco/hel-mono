@@ -23,7 +23,7 @@ export function HelloMono(props: IProps) {
   return (
     <div className={styles.wrap}>
       <header className={styles.header}>
-        HelloMono component header {props.name || ''}
+        V2 HelloMono component header {props.name || ''}
         <b> random num {randomNum()}</b>
         <b> hello from @hel-demo/mono-libs {hello()}</b>
         <img src={svgUrl} className={styles.logo} alt="logo" />

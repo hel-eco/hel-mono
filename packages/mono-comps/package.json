@@ -1,8 +1,8 @@
 {
   "name": "@hel-demo/mono-comps",
   "description": "hel-mono demo comps",
-  "version": "0.0.1",
-  "main": "./src/index.ts",
+  "version": "0.1.1",
+  "main": "./src/index",
   "exports": {
     ".": {
       "types": "./src/index.ts",
@@ -28,9 +28,14 @@
       },
       "./index.css": "./dist/index.css",
       "./hel": {
-        "types": "./src/.hel/entrance/libTypes.ts",
-        "import": "./src/.hel/entrance/libTypes.ts"
+        "types": "./dist/.hel/entrance/libTypes.d.ts",
+        "import": "./dist/.hel/entrance/libTypes.mjs",
+        "require": "./dist/.hel/entrance/libTypes.js"
       }
+    },
+    "dependencies": {
+      "@hel-demo/mono-libs": "*",
+      "hel-mono-runtime-helper": "^2.2.0"
     }
   },
   "scripts": {
@@ -52,7 +57,11 @@
   },
   "dependencies": {
     "@hel-demo/mono-libs": "workspace:^",
-    "hel-mono-runtime-helper": "^1.1.2"
+    "hel-mono-runtime-helper": "^2.2.0"
+  },
+  "peerDependencies": {
+    "hel-mono-runtime-helper": "^2.2.0",
+    "hel-lib-proxy": "*"
   },
   "devDependencies": {
     "esbuild-plugin-module-css": "^0.1.1",
@@ -90,8 +99,7 @@
   "files": [
     "dist",
     "hel_dist",
-    "src",
-    "README.md",
-    "tsconfig.json"
+    "!src",
+    "README.md"
   ]
 }
