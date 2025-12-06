@@ -2,6 +2,12 @@
   "deployPath": "https://unpkg.com",
   "doc": "https://tencent.github.io/hel/docs/hel-mono/basic",
   "handleDeployPath": true,
+  "enableEx": true,
+  "devExLink2": [
+    "https://unpkg.com/hub-ex@0.0.4/hel_dist/static/js/main.38f17314.js"
+  ],
+  "devExLink": "http://localhost:3001",
+  "onlineExLink": "https://unpkg.com/hub-ex@0.0.4/hel_dist/static/js/main.38f17314.js",
   "mods": {
     "hub": {
       "alias": "@",
@@ -14,6 +20,9 @@
     "@hel-demo/mono-libs": {
       "alias": "@ml",
       "port": 3101
+    },
+    "hub-ex": {
+      "port": 3001
     }
   }
 }

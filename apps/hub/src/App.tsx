@@ -1,12 +1,12 @@
-import React from 'react';
 import { HelloMono } from '@hel-demo/mono-comps';
-import { hello } from '@hel-demo/mono-libs';
+import { hello, callGet } from '@hel-demo/mono-libs';
 import { callFn } from '@/utils/path/to/str';
 import logo from './logo.svg';
 import './App.css';
 import styles from './App.module.css';
 
 function App() {
+  console.log(callGet());
   return (
     <div className="App">
       <header className="App-header">

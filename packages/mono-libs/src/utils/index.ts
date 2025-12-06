@@ -1,3 +1,5 @@
+import { get } from 'lodash';
+
 export {
   delay,
   helloAsync,
@@ -8,4 +10,8 @@ export {
  */
 export function hello() {
   return 'hel hello v1.0.3';
+}
+
+export function callGet() {
+  return get({ a: 1 }, 'a');
 }

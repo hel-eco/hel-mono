@@ -14,7 +14,7 @@ exports.FN_TRIGGER_NAMES = {
   buildInAppEXServerMeta: ['biaexsm', 'build-in-app-exs-meta'],
   /**
    * hel micro-module 微模块方式启动，自动启动对应 external 服务
-   * TODO: 待实现，目前可通过 pnpm start hub:helexs 来单独启动对应的 external 服务
+   * TODO: 待实现，目前可通过 pnpm start hub:for exs 来单独启动对应的 external 服务
    */
   startHelModUnderEXMode: ['ex', 'start:ex', 'start-ex'],
   buildHelModUnderEXMode: ['build-ex', 'build:ex'],
