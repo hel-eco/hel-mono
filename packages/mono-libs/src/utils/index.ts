@@ -1,4 +1,4 @@
-import { get } from 'lodash';
+import { createDraft } from 'limu';
 
 export {
   delay,
@@ -13,5 +13,6 @@ export function hello() {
 }
 
 export function callGet() {
-  return get({ a: 1 }, 'a');
+  const draft = createDraft({ a: 1 });
+  return draft;
 }

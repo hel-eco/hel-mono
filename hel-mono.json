@@ -2,12 +2,12 @@
   "deployPath": "https://unpkg.com",
   "doc": "https://tencent.github.io/hel/docs/hel-mono/basic",
   "handleDeployPath": true,
-  "enableEx": true,
-  "devExLink2": [
+  "enableRepoEx": true,
+  "devRepoExLin2": [
     "https://unpkg.com/hub-ex@0.0.4/hel_dist/static/js/main.38f17314.js"
   ],
-  "devExLink": "http://localhost:3001",
-  "onlineExLink": "https://unpkg.com/hub-ex@0.0.4/hel_dist/static/js/main.38f17314.js",
+  "devRepoExLink": "http://localhost:3001",
+  "prodRepoExLink": "https://unpkg.com/hub-ex@0.0.4/hel_dist/static/js/main.38f17314.js",
   "mods": {
     "hub": {
       "alias": "@",

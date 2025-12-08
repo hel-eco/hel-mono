@@ -60,7 +60,7 @@
     "hel-mono-runtime-helper": "^2.2.0"
   },
   "peerDependencies": {
-    "hel-mono-runtime-helper": "^2.2.0",
+    "hel-mono-runtime-helper": "^2.3.2",
     "hel-lib-proxy": "*"
   },
   "devDependencies": {

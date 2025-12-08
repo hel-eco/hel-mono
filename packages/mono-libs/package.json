@@ -60,8 +60,10 @@
     "build:helm": "cross-env-shell \"pnpm run build:hel && pnpm run build:meta\"",
     "build:hels": "node ../../dev/scripts/hel/buildS",
     "build:helbs": "node ../../dev/scripts/hel/buildBS",
-    "build:nbs": "pnpm run build:npm && pnpm run build:helbs",
+    "build:nb": "pnpm run build:hel && pnpm run build:npm",
+    "build:nbs": "pnpm run build:helbs && pnpm run build:npm",
     "build:nbsm": "cross-env-shell \"pnpm run build:nbs && pnpm run build:meta\"",
+    "build:nbm": "cross-env-shell \"pnpm run build:nb && pnpm run build:meta\"",
     "build:ci": "node ../../dev/scripts/hel/buildCI",
     "build:npm": "tsup",
     "tsc": "tsc --project ./tsconfig.build.json && tsc-alias -p ./tsconfig.json ",
@@ -70,7 +72,8 @@
   },
   "dependencies": {
     "hel-lib-proxy": "*",
-    "hel-mono-runtime-helper": "^2.2.0",
+    "hel-mono-runtime-helper": "^2.3.2",
+    "limu": "^4.1.1",
     "lodash": "^4.17.21"
   },
   "peerDependencies": {

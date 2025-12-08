@@ -50,18 +50,18 @@ npm start hub:hel
 构建宿主、子模块
 ```bash
 # 构建宿主，会转为 pnpm --filter hub run build:hel 执行
-npm start hub:build:hel
+npm start hub build:hel
 
 # 构建子模块，会转为 pnpm --filter mono-comps run build:hel 执行
-npm start mono-comps:build:hel
+npm start mono-comps build:hel
 ```
 
 ## 构建微模块模式npm包
 
 ```bash
-npm start hel-demo-lib1:build
+npm start mono-libs build:nbsm
 ```
-构建完毕可到 `packages/hel-demo-lib` 目录下查看到产物，`dist`为npm传统模式分发的产物，`hel_dist`为微模块模式分发的前后端产物
+构建完毕可到 `packages/mono-libs` 目录下查看到产物，`dist`为npm传统模式分发的产物，`hel_dist`为微模块模式分发的前后端产物
 
 ### 其他命令行介绍
 
