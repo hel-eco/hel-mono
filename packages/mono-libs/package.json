@@ -72,9 +72,7 @@
   },
   "dependencies": {
     "hel-lib-proxy": "*",
-    "hel-mono-runtime-helper": "^2.3.2",
-    "limu": "^4.1.1",
-    "lodash": "^4.17.21"
+    "hel-mono-runtime-helper": "^2.3.2"
   },
   "peerDependencies": {
     "hel-lib-proxy": "*",

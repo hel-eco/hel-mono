@@ -38,13 +38,17 @@ npm start hub:build
 
 ### 微模块模式（启动与构建）
 
-先启动 hub 依赖的子模块，再启动 hub
+启动 hub
 ```bash
-# 启动子模块
-npm start mono-comps
-
-# 启动hub
+# 启动 hub 时，会自动启动大仓里依赖的其他子模块
 npm start hub:hel
+```
+
+> 可调整 `hel-mono.json` 里的 `defaultStart` 配置为 `start:hel`，可让 `npm start hub` 命令来以微模块模式启动应用
+
+单独启动子模块
+```bash
+npm start mono-comps
 ```
 
 构建宿主、子模块
@@ -56,12 +60,16 @@ npm start hub build:hel
 npm start mono-comps build:hel
 ```
 
+> 可调整 `hel-mono.json` 里的 `defaultBuild` 配置为 `build:hel`，可让 `npm start .build build` 命令来以微模块模式启动应用
+
 ## 构建微模块模式npm包
 
 ```bash
 npm start mono-libs build:nbsm
 ```
 构建完毕可到 `packages/mono-libs` 目录下查看到产物，`dist`为npm传统模式分发的产物，`hel_dist`为微模块模式分发的前后端产物
+
+> 注意：必须使用 `pnpm publish` 来推送包体
 
 ### 其他命令行介绍
 
@@ -77,13 +85,22 @@ npm start .create-start my-app
 npm start .cs my-app
 ```
 
-### 初始化微模块配置
-使用 `.init` 关键字为目标应用初始化微模块配置，初始化即可使用微模块方式启动
-> 仅首次启动时才需执行
+### 创建子模块
+使用 `.create-mod` 关键字创建宿主应用
 
 ```bash
-# 会自动分析它的孩子依赖并为孩子依赖创建微模块配置
-npm start .init my-app
+# 创建一个目录名为 my-lib 的应用
+npm start .create-mod my-app
+# 创建一个目录名为 my-lib 的应用并指定包名为 @demo/lib
+npm start .create-mod my-app -n @demo/lib
+```
+
+### 删除宿主应用或模块
+使用 `.del` 关键字删除宿主应用或模块
+
+```bash
+# 删除目录名为 my-app 对应的模块
+npm start .del my-app
 ```
 
 ### 多路径查询&启动
