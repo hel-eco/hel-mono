@@ -5,6 +5,14 @@ import logo from './logo.svg';
 import './App.css';
 import styles from './App.module.css';
 
+import * as mbox from 'mobx';
+import * as limu from 'limu';
+import * as helux from 'helux';
+import * as ppo from 'ppo';
+
+
+console.log(mbox, limu, helux, ppo);
+
 function App() {
   console.log(callGet());
   return (

@@ -22,7 +22,7 @@
     "@hel-demo/mono-comps": "workspace:^",
     "@hel-demo/mono-libs": "workspace:^",
     "@helux/store-pinia": "^5.0.3",
-    "hel-mono-runtime-helper": "^2.2.0",
+    "hel-mono-runtime-helper": "^2.3.2",
     "helux": "^5.5.3",
     "helux-mini": "^1.2.7",
     "limu": "^4.1.1",
