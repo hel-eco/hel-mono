@@ -1,6 +1,6 @@
 {
   "name": "hel-mono-react",
-  "version": "1.3.3",
+  "version": "1.4.0",
   "workspaces": [
     "apps/*",
     "packages/*"
@@ -21,7 +21,7 @@
     "hel-iso": "^4.4.0",
     "hel-lib-proxy": "^4.12.1",
     "hel-micro": "^4.15.2",
-    "hel-mono-runtime-helper": "^2.3.2",
+    "hel-mono-runtime-helper": "^2.3.3",
     "lodash": "^4.17.21",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
@@ -64,7 +64,7 @@
     "file-loader": "^6.2.0",
     "fs-extra": "^11.2.0",
     "hel-dev-utils": "^5.4.3",
-    "hel-mono-helper": "^1.9.6",
+    "hel-mono-helper": "^1.10.2",
     "hel-mono-types": "^2.5.0",
     "hel-types": "^4.3.10",
     "html-webpack-plugin": "^5.5.0",

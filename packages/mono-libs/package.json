@@ -70,17 +70,16 @@
     "test": "node ../../dev/scripts/test --config ../../dev/config/jest/jest.config.js",
     "test:once": "cross-env ONCE=1 node ../../dev/scripts/test --config ../../dev/config/jest/jest.config.js"
   },
-  "dependencies": {
-    "hel-lib-proxy": "*",
-    "hel-mono-runtime-helper": "^2.3.2"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "hel-lib-proxy": "*",
-    "hel-mono-runtime-helper": "^2.2.0"
+    "hel-mono-runtime-helper": "^2.3.3"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.12.11",
-    "babel-cli": "^6.26.0"
+    "babel-cli": "^6.26.0",
+    "hel-lib-proxy": "*",
+    "hel-mono-runtime-helper": "^2.3.3"
   },
   "deprecated": false,
   "browserslist": {
