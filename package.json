@@ -64,7 +64,7 @@
     "file-loader": "^6.2.0",
     "fs-extra": "^11.2.0",
     "hel-dev-utils": "^5.4.3",
-    "hel-mono-helper": "^1.10.2",
+    "hel-mono-helper": "^1.10.3",
     "hel-mono-types": "^2.6.0",
     "hel-types": "^4.3.10",
     "html-webpack-plugin": "^5.5.0",

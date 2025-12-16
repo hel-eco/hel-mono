@@ -145,8 +145,8 @@ importers:
         specifier: ^5.4.3
         version: 5.4.3(hel-dev-utils-base@0.0.2)(hel-types@4.3.10)(hel-utils-base@0.0.2)(jsdom@19.0.0)
       hel-mono-helper:
-        specifier: ^1.10.2
-        version: 1.10.2(hel-dev-utils-base@0.0.2)(hel-iso@4.4.0)(hel-lib-proxy@4.12.1)(hel-micro@4.15.2)(hel-mono-runtime-helper@2.3.3)(hel-mono-types@2.6.0)(jsonc-parser@3.3.1)(shelljs@0.9.2)
+        specifier: ^1.10.3
+        version: 1.10.3(hel-dev-utils-base@0.0.2)(hel-iso@4.4.0)(hel-lib-proxy@4.12.1)(hel-micro@4.15.2)(hel-mono-runtime-helper@2.3.3)(hel-mono-types@2.6.0)(jsonc-parser@3.3.1)(shelljs@0.9.2)
       hel-mono-types:
         specifier: ^2.6.0
         version: 2.6.0
@@ -7891,8 +7891,8 @@ packages:
       hel-types: 4.3.10
     bundledDependencies: []
 
-  /hel-mono-helper@1.10.2(hel-dev-utils-base@0.0.2)(hel-iso@4.4.0)(hel-lib-proxy@4.12.1)(hel-micro@4.15.2)(hel-mono-runtime-helper@2.3.3)(hel-mono-types@2.6.0)(jsonc-parser@3.3.1)(shelljs@0.9.2):
-    resolution: {integrity: sha512-09E3sP9bF/szaMbpQNrPwXssWq1af1u95RqmoeKEsczFiUHzykEcZ0ADZ9qOM8hCvMGFwOnj3hqBoDNvgdOODQ==}
+  /hel-mono-helper@1.10.3(hel-dev-utils-base@0.0.2)(hel-iso@4.4.0)(hel-lib-proxy@4.12.1)(hel-micro@4.15.2)(hel-mono-runtime-helper@2.3.3)(hel-mono-types@2.6.0)(jsonc-parser@3.3.1)(shelljs@0.9.2):
+    resolution: {integrity: sha512-cm4XmQ6SXv7jzSLQqSfubxo3lcOjT5K+m4Gn4TN5plDy8Cwvy/b1K+8+9RDt6b3ZKJn4z1Y3Q+SQygaZFDgZCQ==}
     peerDependencies:
       hel-dev-utils-base: ^0.0.2
       hel-iso: ^4.4.0
@@ -7912,7 +7912,6 @@ packages:
       jsonc-parser: 3.3.1
       shelljs: 0.9.2
     dev: true
-    bundledDependencies: []
 
   /hel-mono-runtime-helper@2.3.3(hel-mono-types@2.6.0):
     resolution: {integrity: sha512-h2QT92c16YraTK+QVZpRclq+dZmTBp/ZzrFltdRyyyHMJC4BDRvH3mi4d1zfU8tdKbh++DZrKO7H0GzHF96NVg==}
