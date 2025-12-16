@@ -86,13 +86,15 @@ npm start .cs my-app
 ```
 
 ### 创建子模块
-使用 `.create-mod` 关键字创建宿主应用
+使用 `.create-mod` 关键字创建子模块
 
 ```bash
-# 创建一个目录名为 my-lib 的应用
+# 创建一个目录名为 my-lib 的ts子模块
 npm start .create-mod my-app
-# 创建一个目录名为 my-lib 的应用并指定包名为 @demo/lib
+# 创建一个目录名为 my-lib 的ts子模块并指定包名为 @demo/lib
 npm start .create-mod my-app -n @demo/lib
+# 创建一个目录名为 my-comp 的react组件子模块
+npm start .create-mod my-comp -t react-lib
 ```
 
 ### 删除宿主应用或模块
