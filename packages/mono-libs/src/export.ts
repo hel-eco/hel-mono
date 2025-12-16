@@ -1,1 +1,1 @@
-export { hello, delay, helloAsync, callGet } from './utils';
+export { hello, delay, helloAsync } from './utils';

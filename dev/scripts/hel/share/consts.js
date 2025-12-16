@@ -6,10 +6,12 @@ exports.FN_TRIGGER_NAMES = {
   startAloneEXServer: ['exs', 'start-exs'],
   buildAloneEXServer: ['bexs', 'build-exs'],
   buildAloneEXServerMeta: ['bexsm', 'build-exs-meta'],
+  /** TODO: 待实现 */
   startInAppEXServer: ['iaexs', 'start-in-app-exs'],
+  /** TODO: 待实现 */
   buildInAppEXServer: ['biaexs', 'build-in-app-exs'],
   /**
-   * 提取在 app 里直接构建的 external 产物的 meta
+   * TODO: 待实现，提取在 app 里直接构建的 external 产物的 meta
    */
   buildInAppEXServerMeta: ['biaexsm', 'build-in-app-exs-meta'],
   /**
@@ -17,6 +19,7 @@ exports.FN_TRIGGER_NAMES = {
    * TODO: 待实现，目前可通过 pnpm start hub:for exs 来单独启动对应的 external 服务
    */
   startHelModUnderEXMode: ['ex', 'start:ex', 'start-ex'],
+  /** TODO: 待实现 */
   buildHelModUnderEXMode: ['build-ex', 'build:ex'],
   startAndWaitLocalDeps: ['hwl', 'start:hwl'],
   startWithRemoteDeps: ['hwr', 'start:hwr'],

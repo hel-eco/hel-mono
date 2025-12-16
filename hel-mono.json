@@ -18,9 +18,6 @@
     "@hel-demo/mono-libs": {
       "alias": "@ml",
       "port": 3101
-    },
-    "hub-ex": {
-      "port": 3001
     }
   }
 }

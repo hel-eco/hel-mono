@@ -1,7 +1,7 @@
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 // your proxy host
-const proxyHost = 'https://hel.woa.com';
+const proxyHost = 'https://helmicro.com';
 
 function makeProxyFn(app) {
   const proxyFn = (path, target = proxyHost, pathRewrite) => {
