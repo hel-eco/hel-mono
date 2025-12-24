@@ -49,4 +49,4 @@ exports.extractMeta = function (isInAppMetaMode) {
     }
     process.exit(-1);
   });
-}
+};

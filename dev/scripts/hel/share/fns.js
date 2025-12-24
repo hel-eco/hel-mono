@@ -89,7 +89,7 @@ function startHelModUnderEXMode() {
   // require('../start');
   const { appDir } = monoUtil.getCWDAppData();
   console.log('to be implement startHelModUnderEXMode', appDir);
-  monoUtil.runAppScriptWithCWD(process.cwd(), 'start:for exs')
+  monoUtil.runAppScriptWithCWD(process.cwd(), 'start:for exs');
 }
 
 /**
@@ -159,7 +159,7 @@ Object.keys(FN_TRIGGER_NAMES).forEach((key) => {
   const fn = presetFns[key];
   fns[key] = fn;
   names.forEach(v => fns[v] = fn);
-})
+});
 
 module.exports = {
   fns,

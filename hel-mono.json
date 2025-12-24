@@ -7,7 +7,7 @@
   "mods": {
     "hub": {
       "alias": "@",
-      "port": 3000
+      "port": 3003
     },
     "@hel-demo/mono-comps": {
       "alias": "@mc",

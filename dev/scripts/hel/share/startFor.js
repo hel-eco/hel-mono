@@ -14,4 +14,4 @@ module.exports = function startFor() {
   console.log(`hit fn by ${keyword}`);
 
   fn();
-}
+};
