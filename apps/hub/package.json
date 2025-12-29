@@ -21,7 +21,7 @@
   "dependencies": {
     "@hel-demo/mono-comps": "workspace:^",
     "@hel-demo/mono-libs": "workspace:^",
-    "hel-mono-runtime-helper": "^2.3.3"
+    "hel-mono-runtime-helper": "^2.3.4"
   },
   "eslintConfig": {
     "extends": [
