@@ -23,6 +23,7 @@ function startEX() {
 }
 
 function startAloneEXServer() {
+  console.log(' startAloneEXServer startAloneEXServer startAloneEXServer');
   monoUtil.runAppScriptWithCWD(monoUtil.getCWDInfo().exCwd, 'start:hel');
 }
 
@@ -86,14 +87,16 @@ function startHelModUnderEXMode() {
   // prepareHelEntry({ forEX: true });
   // call cra start
   // require('../start');
-  console.log('to be implement', prepareHelEntry);
+  const { appDir } = monoUtil.getCWDAppData();
+  console.log('to be implement startHelModUnderEXMode', appDir);
+  monoUtil.runAppScriptWithCWD(process.cwd(), 'start:for exs');
 }
 
 /**
  *  以 hel micro-module 微模块方式构建，此构建会自动排除掉所有一级依赖
  */
 function buildHelModUnderEXMode() {
-  console.log('to be implement');
+  console.log('to be implement buildHelModUnderEXMode');
 }
 
 /**
@@ -156,7 +159,7 @@ Object.keys(FN_TRIGGER_NAMES).forEach((key) => {
   const fn = presetFns[key];
   fns[key] = fn;
   names.forEach(v => fns[v] = fn);
-})
+});
 
 module.exports = {
   fns,

@@ -301,6 +301,8 @@ module.exports = function (webpackEnv) {
         // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
         'react-native': 'react-native-web',
+        // [HEL_MARK]: fix problem ( Module not found: Error: Can't resolve 'react/jsx-runtime' )
+        'react/jsx-runtime': 'react/jsx-runtime.js',
         // Allows for better profiling with ReactDevTools
         ...(isEnvProductionProfile && {
           'react-dom$': 'react-dom/profiling',
@@ -765,6 +767,10 @@ module.exports = function (webpackEnv) {
             }),
           },
         },
+      }),
+      // [HEL_MARK]: 尽可能打成一个js
+      new webpack.optimize.MinChunkSizePlugin({
+        minChunkSize: 10000000,
       }),
     ].filter(Boolean),
     // Turn off performance processing because we utilize

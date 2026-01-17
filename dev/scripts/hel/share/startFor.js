@@ -11,6 +11,7 @@ module.exports = function startFor() {
   if (!fn) {
     throw new Error(`No implement handler for ${keyword}`);
   }
+  console.log(`hit fn by ${keyword}`);
 
   fn();
-}
+};

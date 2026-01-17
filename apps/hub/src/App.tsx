@@ -1,4 +1,3 @@
-import React from 'react';
 import { HelloMono } from '@hel-demo/mono-comps';
 import { hello } from '@hel-demo/mono-libs';
 import { callFn } from '@/utils/path/to/str';
