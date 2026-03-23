@@ -1,6 +1,6 @@
 {
   "name": "hel-mono-react",
-  "version": "1.5.5",
+  "version": "1.5.6",
   "workspaces": [
     "apps/*",
     "packages/*"
@@ -64,7 +64,7 @@
     "file-loader": "^6.2.0",
     "fs-extra": "^11.2.0",
     "hel-dev-utils": "^5.4.3",
-    "hel-mono-helper": "^1.11.1",
+    "hel-mono-helper": "^1.11.2",
     "hel-mono-types": "^2.6.1",
     "hel-types": "^4.3.10",
     "html-webpack-plugin": "^5.5.0",
