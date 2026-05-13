@@ -1,7 +1,7 @@
 {
   "name": "hub",
   "appGroupName": "hub",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "./src/index",
   "scripts": {
     "start": "node ../../dev/root-scripts/executeStart",
@@ -9,6 +9,7 @@
     "start:hel": "node ../../dev/scripts/hel/start",
     "start:for": "node ../../dev/scripts/hel/startFor",
     "start:all": "node ../../dev/scripts/hel/startAll",
+    "start:deps": "node ../../dev/scripts/hel/startDeps",
     "build": "node ../../dev/scripts/build",
     "build:all": "node ../../dev/scripts/hel/buildAll",
     "build:allm": "cross-env-shell \"pnpm run build:all && pnpm run build:meta\"",
